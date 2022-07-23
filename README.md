@@ -1,3 +1,3 @@
 # sherlockholmes
 
-https://loosecookie.github.io/sherlockholmes/index.html
+https://loosecookie.github.io/sherlockholmes/home.html
