@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Sherlock Holmes</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' type='text/css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://use.typekit.net/qur5kid.css">
+    <link rel="stylesheet" href="animate.min.css">
+</head>
+
+    <img class="border1" src="border.png">
+    <img class="border2" src="border2.png">
+    <img class="border3" src="border3.png">
+    <img class="border4" src="border4.png">
+    
+<body class="animated fadeIn" id="homegrid">
+    <div class="homecontent">
+        <h1 style="padding-bottom: 40px">Heroes and Villains</h1>
+        <h2 style="padding-bottom: 40px">The Life and Times of Sherlock Holmes</h2>
+        <p><span class="firstcharacter">S</span>ir Arthur Conan Doyle's celebrated Sherlock Holmes' characters have captured the minds of countless admirers over the years. </p><br>
+
+        <p>Holmes is a <b style="color: #CA492A;">fictional consulting detective</b> known for his proficiency with observation, forensic science, and logical reasoning. His powers of deduction border on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p><br>
+
+        <p>Holmes has lived a life beyond the printed page. Recent adaptations, brought to life on the silver screen, include: Benedict Cumberbatch and Martin Freeman's portrayal in <i>'Sherlock'</i>; Sir Ian McKellen's portrayal in <i>'Mr Holmes'</i>; and – more recently – Will Ferrell and John C Reilly's portrayal in <i>'Holmes &amp; Watson'</i>.</p><br>
+
+        <p>Conan Doyle's writings live on from generation to generation. As Scott Monty, a member of the Sherlock Holmes Enthusiast Group <i>'Baker Street Irregulars'</i>, puts it:</p><br>
+
+        <blockquote>
+          <p3>"</p3>
+          <p2>Every generation or so, some kind of cycle happens, some big book or movie begins to start the process and then others seem to follow up.</p2>
+          <p3>"</p3>
+        </blockquote><br>
+        
+    </div>
+    
+    <div class="transition1 fadeIn"  id="smallprintoverlay" onclick="off()">
+    <p id="box5" style="color: #001C04">This web site is a homage to the Sherlock Holmes' story and was created as a piece of coursework for the 'Narrative and Storytelling' module at Belfast School of Art. <br><Br>
+        
+    We are indebted to <b>Ethan Marcotte</b> who kindly granted us his permission to develop his original <a href="https://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html"><b>Victor's &amp; Villains</b></a> website, designed to outline his thoughts on <a href="https://alistapart.com/article/responsive-web-design"><b>Responsive Web Design</b></a>.<br><br>
+        
+    Content Copyright <b>Christopher Murphy</b> and other respective owners.
+    Design Copyright <b>Lucy Cook</b> which you can see more at <a href="https://lucycookdesigns.com/index.html"><b>lucycookdesigns.com</b></a>.</p>
+    </div>
+    
+    <div>
+        <button onclick="on()"><img class="infoi" src="infoI.png" style="width: 2%"></button>
+    </div>
+    
+    <script>
+    function on() {
+      document.getElementById("smallprintoverlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("smallprintoverlay").style.display = "none";
+    }
+    </script>
+    
+    <p class="animated fadeIn" id="box2" style="color:#001C04;">Click on the windows to explore Holmes's room!</p>
+    
+    <div class="homeimg">
+        <img src="221b.png" style="width:50%" usemap="#221bmap">
+
+    <map name="221bmap">
+        <area shape="rect" coords="70,50,140,190" href="window1.html" alt="window1">
+        <area shape="rect" coords="280,50,200,190" href="window2.html" alt="window2">
+        <area shape="rect" coords="70,220,140,350" href="window3.html" alt="window3">
+        <area shape="rect" coords="280,220,200,350" href="window4.html" alt="window4">
+    </map>
+    </div>
+    
+    <script src="jquery.rwdImageMaps.min.js"></script>
+    <script>
+    $('img[usemap]').rwdImageMaps();
+        
+    $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    
+    
+    </body>
+</html>

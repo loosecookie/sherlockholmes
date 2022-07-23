@@ -1,0 +1,1273 @@
+/*------------------- CSS RESET -----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: normal;
+}
+
+body {
+    width: 100%;
+    font-family: edita, serif;
+    font-weight:normal;
+    color: #000;
+    background-color: #001C04;
+}
+
+url {
+    cursor: url(cursor.png), default;
+}
+
+/*----------------- TYPOGRAPHY ------------------------*/
+
+h1 { 
+    font-family: olicana-smooth, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 84px;
+    color: white;
+    text-align:center;
+    line-height: 80px;
+}
+
+h2 { 
+    font-family: Edita, serif; 
+    font-weight: 500;
+    font-style: italic;
+    font-size: 34px;
+    color: white;
+    line-height: 30px;
+}
+
+h3 { 
+    font-family: Edita, serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+h4 { 
+    font-family: olicana-smooth, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    line-height: 120px;
+    font-size: 54px; 
+    color: #001C04;
+}
+
+h5 { 
+    font-family: olicana-smooth, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 84px;
+    color: white;
+    line-height: 100px;
+}
+
+h6 { 
+    font-family: edita, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    line-height: 50px;
+}
+
+p{
+    font-size: 17px;
+    color:white;
+    line-height: 20px;
+}
+
+p2{
+    font-size:20px; 
+    line-height: 25px;
+    color:white;
+}
+
+p3{
+    font-size:30px; 
+    line-height: 25px;
+    color: #CA492A;
+}
+
+blockquote{
+    font-style: italic;
+    text-align: center;
+}
+
+/*----------------- HOME ------------------------*/
+
+#homegrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "homecontent homeimg";
+}
+
+.homecontent {
+    grid-area: homecontent;
+    padding: 120px 0px 0px 200px;
+}
+
+.homeimg {
+    grid-area: homeimg;
+    margin: 30px 40px 20px 0px;
+    text-align: center;
+}
+
+.firstcharacter {
+  color: #CA492A;
+  float: left;
+  font-family: Georgia;
+  font-size: 70px;
+  line-height: 25px;
+  padding-right: 5px;
+}
+
+.border1{
+    width: 10%;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+.border2{
+    width: 10%;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+.border3{
+    width: 10%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.border4{
+    width: 10%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.infoi {
+    position: fixed;
+    top:35px;
+    right: 35px;
+    cursor: pointer, auto;
+}
+
+#box5 {
+  border-radius: 25px;
+  background: #F7DCD2;
+  padding: 60px; 
+  width: 400px;
+  height: 250px;  
+margin: 230px 0px 0px 450px;
+}
+
+#smallprintoverlay {
+text-align: left;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2; 
+}
+
+#box2 {
+  border-radius: 10px;
+  background: #F7DCD2;
+  padding: 20px; 
+  width: 170px;
+  height: 50px;  
+    position: fixed;
+    margin: 180px 0px 0px 1190px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+/*----------------- BUTTONS ------------------------*/
+
+a {
+    font-family: Edita, sans-serif;
+    text-decoration: none;
+    color: #CA492A;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: auto;
+}
+
+a:hover{
+    cursor: pointer, auto;
+}
+
+.homeicon{
+    position:fixed;
+    right: 20px;
+    bottom: 0px;
+    box-shadow:4px 2px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer, auto;
+}
+
+a:hover{
+    cursor: pointer, auto;
+}
+
+.button {
+    font-family: edita, sans-serif;
+    color: #fff;
+    font-size: 15px;
+    box-shadow:4px 2px 10px rgba(0, 0, 0, 0.3); 
+    padding: 1.3vw 1vw;
+    width: 180px;
+    text-align: center;
+    border-radius: 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.05); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+} 
+
+.button1 {
+    background-color: #A34747;
+    position: fixed;
+    top: 400px;
+    left: 20px;
+}
+
+.button2 {
+    background-color: #A34747;
+    position: fixed;
+    top: 400px;
+    right: 20px;
+}
+
+.button3 {
+    background-color: #AF6464;
+    position: fixed;
+    top: 400px;
+    left: 20px;
+}
+
+.button4 {
+    background-color: #AF6464;
+    position: fixed;
+    top: 400px;
+    right: 20px;
+}
+
+.button5{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #CA492A;
+    padding: 1.3vw 4vw;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-left:65px;
+}
+
+.button6{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.button6:hover{
+    color: black;
+}
+
+.button7{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #863131;
+    padding: 1.3vw 2.5vw;
+    border-radius: 10px;
+}
+
+.button8{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #A24646;
+    padding: 1.3vw 2.5vw;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#button9:hover {
+    box-shadow: 0 6px 3px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    transform: scale(1.02); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+#button10:hover {
+    transform: scale(1.02); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+#button11:hover {
+    transform: scale(1.02); transition: transform .4s; transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+/*----------------- PAGE TRANSITIONS ------------------------*/
+
+.animated {
+  animation:0.5s ease 1s normal forwards 1 fadein;
+    -webkit-animation:0.5s ease 0.5s normal forwards 1 fadein;
+    opacity:0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.transition1 {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.transition {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+
+/*----------------- WINDOW1 ------------------------*/
+
+.window1grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "window1content homeimg";
+}
+
+.window1content {
+    grid-area: window1content;
+    background-color: #F7DCD2;
+}
+
+#box {
+  border-radius: 25px;
+  background: #F7DCD2;
+  padding: 60px; 
+  width: 400px;
+  height: 560px;  
+    margin: 70px 0px 0px 200px;
+}
+
+.homeimg {
+    grid-area: homeimg;
+    margin: 30px 40px 20px 0px;
+    text-align: center;
+}
+
+/*----------------- CAST OF CHARACTERS ------------------------*/
+
+#castofcharacters {
+    display: grid;
+    background-image: url(wallpaper1.png);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "casttitle"
+    "pinboardimg";
+}
+
+.casttitle{
+    grid-area: casttitle;
+    padding-top: 50px;}
+
+.pinboardimg{
+    grid-area: pinboardimg;
+    padding-top: 30px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.holmes{
+    position: absolute;
+    top: 480px;
+    left: 525px;
+}
+
+.moriarty{
+    position:absolute;
+    top: 310px;
+    left: 320px;
+}
+
+.watson{
+    position: absolute;
+    top: 230px;
+    left: 730px
+}
+
+.adler{
+    position: absolute;
+    top: 490px;
+    left: 930px;
+}
+
+/*----------------- CHARACTER GRID ------------------------*/
+
+#charactergrid {
+    display: grid;
+    background-image: url(wallpaper1.png);
+    grid-template-columns:55% 45%;
+    grid-template-areas: 
+    "sherlockbtn sherlockbtn"
+    "sherlocktitle sherlocktitle"
+    "sherlockcontent sherlockimg"
+    "contentend sherlockimg";
+}
+
+.sherlockbtn{
+    grid-area: sherlockbtn;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+
+.sherlocktitle{
+    grid-area: sherlocktitle;
+    background-color: #A05959;
+    padding-top: 30px;
+    padding-left: 180px;
+    
+}
+
+.sherlockcontent{
+    grid-area: sherlockcontent;
+    padding-left: 180px;
+    padding-top: 30px;
+}
+
+.contentend{
+    grid-area: contentend;
+    text-align: center;
+    padding-left: 180px;
+    padding-top: 40px;
+}
+
+.sherlockimg{
+    grid-area: sherlockimg;
+    padding: 30px 250px 0px 60px;
+}
+
+/*----------------- 221b Baker Street ------------------------*/
+
+#bakerstreet {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "bakertitle"
+    "mapimg";
+}
+
+.bakertitle{
+    grid-area: bakertitle;
+    padding-top: 50px;}
+
+.mapimg{
+    grid-area: mapimg;
+    padding-top: 20px;
+}
+
+#box3 {
+  border-radius: 10px;
+  background: #F7DCD2;
+  padding: 20px; 
+  width: 170px;
+  height: 60px;  
+    position: absolute;
+    margin: 250px 0px 0px 1020px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.bigben {
+    position: absolute;
+    top: 500px;
+    left: 550px;
+    width: 8%;
+}
+
+.overlay {
+  position: absolute;
+  top: 130px;
+  left: 1020px;
+  right: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 220px; 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F7DCD2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.bigbenhover:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  padding: 20px;
+  top: 110px;
+  left: 150px;
+  width: 260px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.londoneye {
+    position: absolute;
+    top: 560px;
+    left: 690px;
+    width: 9%;
+}
+
+.londoneyehover:hover .overlay {
+  opacity: 1;
+}
+
+.shard {
+    position: absolute;
+    top: 500px;
+    left: 810px;
+    width: 4.5%;
+}
+
+.shardhover:hover .overlay {
+  opacity: 1;
+}
+
+.bridge {
+    position: absolute;
+    top: 458px;
+    left: 850px;
+    width: 19%;
+}
+
+.bridgehover:hover .overlay {
+  opacity: 1;
+}
+
+.tower {
+    position: absolute;
+    top: 340px;
+    left: 855px;
+    width: 8%;
+}
+
+.towerhover:hover .overlay {
+  opacity: 1;
+}
+
+.gerkin {
+    position: absolute;
+    top: 360px;
+    left: 800px;
+    width: 4%;
+}
+
+.gerkinhover:hover .overlay {
+  opacity: 1;
+}
+
+.kingscross {
+    position: absolute;
+    top: 260px;
+    left: 630px;
+    width: 16%;
+}
+
+.kingscrosshover:hover .overlay {
+  opacity: 1;
+}
+
+.buckingham {
+    position: absolute;
+    top: 540px;
+    left: 350px;
+    width: 16%;
+}
+
+.buckinghamhover:hover .overlay {
+  opacity: 1;
+}
+
+.marblearch {
+    position: absolute;
+    top: 440px;
+    left: 450px;
+    width: 8%;
+}
+
+.marblearchhover:hover .overlay {
+  opacity: 1;
+}
+
+.sherlockmuseum{
+    position: absolute;
+    top: 270px;
+    left: 470px;
+    width: 4.5%;
+}
+
+.sherlockmuseumhover:hover .overlay {
+  opacity: 1;
+}
+
+#bus{
+    width: 3%;
+    position: absolute;
+    top: 390px;
+    right: 400px;
+}
+
+#taxi{
+    width: 2.7%;
+    position: absolute;
+    top: 420px;
+    right: 700px;
+}
+
+#taxi1{
+    width: 2.6%;
+    position: absolute;
+    top: 220px;
+    right: 780px;
+}
+
+#bus1{
+    width: 3%;
+    position: absolute;
+    top: 650px;
+    left: 430px;
+}
+
+#bus2{
+    width: 3%;
+    position: absolute;
+    top: 260px;
+    left: 380px;
+}
+
+.animated10 {
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+}
+
+.animated11 {
+  animation-duration: 100s;
+    animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animated12 {
+  animation-duration: 70s;
+    animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animated13 {
+  animation-duration: 90s;
+    animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animated14 {
+  animation-duration: 70s;
+    animation-delay: 7s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  70% {
+    -webkit-transform: translate3d(80px, 0, 0);
+    transform: translate3d(80px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+
+/*----------------- MEASURING MR HOLMES ------------------------*/
+
+.bookshelfgrid {
+    display: grid;
+    background-image: url(wallpaper1.png);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "bookshelftitle"
+    "bookshelfimg";
+}
+
+.bookshelftitle{
+    grid-area: bookshelftitle;
+    padding-top: 50px;}
+
+.bookshelfimg{
+    grid-area: bookshelfimg;
+    padding-top: 30px;
+}
+
+#box4 {
+  border-radius: 10px;
+  background: #F7DCD2;
+  padding: 20px; 
+  width: 170px;
+  height: 60px;  
+    position: absolute;
+    margin: 390px 0px 0px 835px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.novel1 {
+    position: absolute;
+    top: 264px;
+    left: 390px;
+    width: 5%;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 270px;
+  left: 745px;
+  right: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 220px; 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F7DCD2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.novel1hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  font-size: 20px;
+  position: absolute;
+  padding: 20px;
+  top: 110px;
+  left: 150px;
+  width: 260px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.novel2 {
+    position: absolute;
+    top: 280px;
+    left: 455px;
+    width: 4.2%;
+}
+
+.novel2hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.novel3 {
+    position: absolute;
+    top: 280px;
+    left: 505px;
+    width: 9%;
+}
+
+.novel3hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.novel4 {
+    position: absolute;
+    top: 282px;
+    left: 623px;
+    width: 4.7%;
+}
+
+.novel4hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story1 {
+    position: absolute;
+    top: 560px;
+    left: 400px;
+    width: 4.5%;
+}
+
+.story1hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story2 {
+    position: absolute;
+    top: 559px;
+    left: 453px;
+    width: 4%;
+}
+
+.story2hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story3 {
+    position: absolute;
+    top: 572px;
+    left: 500px;
+    width: 4.2%;
+}
+
+.story3hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story4 {
+    position: absolute;
+    top: 555px;
+    left: 550px;
+    width: 4%;
+}
+
+.story4hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story5 {
+    position: absolute;
+    top: 560px;
+    left: 600px;
+    width: 4.4%;
+}
+
+.story5hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story6 {
+    position: absolute;
+    top: 566px;
+    left: 655px;
+    width: 4.4%;
+}
+
+.story6hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story7 {
+    position: absolute;
+    top: 563px;
+    left: 710px;
+    width: 4.4%;
+}
+
+.story7hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story8 {
+    position: absolute;
+    top: 551px;
+    left: 765px;
+    width: 4.9%;
+}
+
+.story8hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story9 {
+    position: absolute;
+    top: 560px;
+    left: 825px;
+    width: 4%;
+}
+
+.story9hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story10 {
+    position: absolute;
+    top: 561px;
+    left: 872px;
+    width: 4.5%;
+}
+
+.story10hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story11 {
+    position: absolute;
+    top: 564px;
+    left: 930px;
+    width: 4.4%;
+}
+
+.story11hover:hover .overlay1 {
+  opacity: 1;
+}
+
+.story12 {
+    position: absolute;
+    top: 558px;
+    left: 980px;
+    width: 4.7%;
+}
+
+.story12hover:hover .overlay1 {
+  opacity: 1;
+}
+
+/*----------------- INFOGRAPHIC ------------------------*/
+
+
+.infogrid1 {
+    display: grid;
+    background-color: #863131;
+    grid-template-columns: 100%;
+    padding: 0 100px;
+    grid-template-areas: 
+    "bookshelftitle"
+    "info1title"
+    "info1img";
+}
+
+.bookshelftitle{
+    grid-area: bookshelftitle;
+}
+
+.info1title{
+    grid-area: info1title;
+    padding-top: 60px;
+}
+
+.info1img{
+    grid-area: info1img;
+    padding-top: 60px;
+    padding-bottom: 10px;}
+
+
+
+.infogrid2 {
+    display: grid;
+    background-color: #A05959;
+    padding: 100px 100px 80px 100px;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "info2title info2img2"
+    "info2img1 info2img2";
+}
+
+.info2title{
+    grid-area: info2title;
+}
+
+.info2img1{
+    grid-area: info2img1;
+    padding-top: 60px;}
+.info2img2{
+    grid-area: info2img2;
+    padding-right: 20px;}
+
+.infogrid3 {
+    display: grid;
+    background-color: #863131;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "info3img";
+}
+
+.info3title{
+    grid-area: info3title;
+    position: absolute;
+    margin: 600px 0px 0px 700px;
+}
+
+.info3img{
+    grid-area: info3img;
+    padding: 60px 100px 60px 0px;
+}
+
+/*----------------- ON THE SILVER SCREEN ------------------------*/
+
+.silverscreengrid {
+    display: grid;
+    background-image: url(wallpaper2.png);
+    padding: 0px 200px;
+    width: 70%;
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-areas: 
+    "silverscreentitle silverscreentitle silverscreentitle silverscreentitle"
+    "movie1 movie2 movie3 movie4";
+}
+
+.silverscreentitle{
+    grid-area: silverscreentitle;
+    padding-top: 50px;
+}
+
+.movie1{
+    grid-area: movie1;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.movie2{
+    grid-area: movie2;
+    padding-top: 50px;
+}
+
+.movie3{
+    grid-area: movie3;
+    padding-top: 50px;
+}
+
+.movie4{
+    grid-area: movie4;
+    padding-top: 50px;
+}
+
+.animated1 {
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animated2 {
+  animation-duration: 9s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animated3 {
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.animated4 {
+  animation-duration: 7s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 1deg);
+    transform: rotate3d(0, 0, 1, 1deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -1deg);
+    transform: rotate3d(0, 0, 1, -1deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 0.5deg);
+    transform: rotate3d(0, 0, 1, 0.5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -0.5deg);
+    transform: rotate3d(0, 0, 1, -0.5sdeg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+/*----------------- MOVIE SCREENS ------------------------*/
+
+
+#moviegrid {
+    display: grid;
+    background-image: url(wallpaper2.png);
+    grid-template-columns:12.5% 12.5% 12.5% 12.5% 50%;
+    grid-template-areas: 
+    "readmorebtn readmorebtn readmorebtn readmorebtn readmorebtn"
+    "movietitle movietitle movietitle movietitle movietitle"
+    "moviemeta1 moviemeta1 moviemeta2 moviemeta3 movieimg"
+    "moviecontent moviecontent moviecontent moviecontent movieimg"
+    "moviebtn moviebtn moviebtn moviebtn movieimg";
+}
+
+.readmorebtn{
+    grid-area: readmorebtn;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+
+.movietitle{
+    grid-area: movietitle;
+    background-color: #863131;
+    padding-top: 30px;
+    padding-left: 180px;
+    
+}
+
+.moviemeta1{
+    grid-area: moviemeta1;
+    padding-left: 180px;
+    padding-top: 60px;
+}
+
+.moviemeta2{
+    grid-area: moviemeta2;
+    padding-top: 60px;
+}
+
+.moviemeta3{
+    grid-area: moviemeta3;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.moviecontent{
+    grid-area: moviecontent;
+    padding-left: 180px;
+}
+
+.movieimg{
+    grid-area: movieimg;
+    padding: 30px 300px 0px 60px;
+}
+
+.moviebtn{
+    grid-area: moviebtn;
+    padding-left: 180px;
+}
+
+/*-------------------- MEDIA QUERIES ----------------------*/
+@media (max-width: 992px) {
+    
+    .border1{width: 12%;}
+    .border2{width: 12%;}
+    .border3{width: 12%;}
+    .border4{width: 12%;}
+    
+    .homegrid {grid-template-columns: 58% 42%;}
+
+    .homecontent {padding: 100px 0px 0px 80px;}
+    .homeimg {margin: 70px 0px 0px 50px; width: 120%; text-align: left;}
+
+    
+    h1 { font-size: 68px;
+        line-height: 30px;}
+
+    h2 {font-size: 26px;
+        text-align: center;
+        line-height: 30px;}
+
+    p{font-size: 14px;
+    line-height: 20px;}
+    p2{font-size:18px;}
+    
+    #box5 {margin: 150px 0px 0px 200px;}
+    
+    .window1grid {grid-template-columns: 58% 42%;}
+
+    #box { 
+      width: 350px;
+      height: 400px;  
+      margin: 70px 0px 0px 100px;
+    }
+
+    .homeimg {margin: 70px 0px 0px 50px; width: 120%; text-align: left;}
+    
+    h3 { font-size: 25px;}
+
+    h4 { 
+        line-height: 80px;
+        font-size: 45px; }
+    
+}
+
+
